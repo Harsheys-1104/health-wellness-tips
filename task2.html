@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health & Wellness Tips</title>
+    <style>
+        :root {
+            --primary-color: #4CAF50;
+            --secondary-color: #45a049;
+            --text-color: #333;
+            --background-color: #f9f9f9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        nav {
+            background-color: var(--secondary-color);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ddd;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .section-card {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .section-card h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .section-card img {
+            max-width: 100%;
+            height: auto;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .health-tip {
+            background: #f0f8f0;
+            padding: 1rem;
+            border-left: 4px solid var(--primary-color);
+            margin: 1rem 0;
+        }
+
+        .tips-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 1rem 0;
+        }
+
+        .tips-list li {
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: #f8f8f8;
+            border-radius: 4px;
+        }
+
+        .tips-list li strong {
+            color: var(--primary-color);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .related-topics {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 2px solid #eee;
+        }
+
+        .contact-form {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .contact-form button {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: var(--secondary-color);
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+            
+            main {
+                padding: 0 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Health & Wellness Tips</h1>
+        <p>Your guide to a healthier lifestyle</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#healthy-eating">Healthy Eating</a></li>
+            <li><a href="#exercise-tips">Exercise Tips</a></li>
+            <li><a href="#mental-health">Mental Health</a></li>
+            <li><a href="#common-ailments">Common Ailments</a></li>
+            <li><a href="#first-aid">First Aid</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="healthy-eating" class="section-card">
+            <h2>Healthy Eating</h2>
+            <img src="/api/placeholder/800/400" alt="Healthy food illustration">
+            <p>Discover the principles of maintaining a balanced diet and healthy eating habits.</p>
+            <ul class="tips-list">
+                <li><strong>Balanced Diet:</strong> Include proteins, carbohydrates, and healthy fats in every meal.</li>
+                <li><strong>Portion Control:</strong> Use smaller plates and practice mindful eating.</li>
+                <li><strong>Hydration:</strong> Drink at least 8 glasses of water daily.</li>
+                <li><strong>Meal Planning:</strong> Prepare weekly meal plans to ensure healthy eating.</li>
+                <li><strong>Smart Snacking:</strong> Choose nuts, fruits, or yogurt instead of processed snacks.</li>
+            </ul>
+            <div class="health-tip">
+                <strong>Tip:</strong> Eat plenty of fruits and vegetables - aim for at least 5 portions a day!
+            </div>
+
+            <div class="related-topics">
+                <h3>Related Topics</h3>
+                <ul class="tips-list">
+                    <li><strong>Nutrition and Mental Health:</strong>
+                        - Foods that boost mood and mental clarity
+                        - Impact of diet on anxiety and depression
+                        - Importance of regular eating patterns for mental wellbeing
+                    </li>
+                    <li><strong>Diet and Exercise:</strong>
+                        - Pre and post-workout nutrition
+                        - Meal timing for optimal performance
+                        - Hydration during exercise
+                    </li>
+                    <li><strong>Diet and Common Health Issues:</strong>
+                        - Anti-inflammatory foods for joint pain
+                        - Dietary approaches to manage diabetes
+                        - Foods that help boost immunity
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="exercise-tips" class="section-card">
+            <h2>Exercise Tips</h2>
+            <img src="/api/placeholder/800/400" alt="Exercise illustration">
+            <p>Learn how to incorporate regular physical activity into your daily routine.</p>
+            <ul class="tips-list">
+                <li><strong>Cardio Exercise:</strong> Include walking, jogging, or cycling for heart health.</li>
+                <li><strong>Strength Training:</strong> Perform resistance exercises twice a week.</li>
+                <li><strong>Flexibility:</strong> Practice stretching exercises daily.</li>
+                <li><strong>Active Lifestyle:</strong> Take stairs instead of elevators.</li>
+                <li><strong>Recovery:</strong> Allow adequate rest between workouts.</li>
+            </ul>
+            <div class="health-tip">
+                <strong>Tip:</strong> Get at least 30 minutes of moderate exercise per day.
+            </div>
+
+            <div class="related-topics">
+                <h3>Related Topics</h3>
+                <ul class="tips-list">
+                    <li><strong>Exercise and Mental Health:</strong>
+                        - Benefits of exercise for anxiety and depression
+                        - Mind-body exercises like yoga and tai chi
+                        - Exercise for stress relief
+                    </li>
+                    <li><strong>Exercise and Common Ailments:</strong>
+                        - Safe exercises for back pain
+                        - Exercise modifications for joint problems
+                        - Physical therapy exercises for recovery
+                    </li>
+                    <li><strong>Exercise Safety:</strong>
+                        - Proper warm-up techniques
+                        - Injury prevention guidelines
+                        - When to seek medical attention
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="mental-health" class="section-card">
+            <h2>Mental Health</h2>
+            <img src="/api/placeholder/800/400" alt="Mental health illustration">
+            <p>Understanding the importance of mental wellness and stress management.</p>
+            <ul class="tips-list">
+                <li><strong>Stress Management:</strong> Practice relaxation techniques.</li>
+                <li><strong>Sleep Hygiene:</strong> Maintain a regular sleep schedule.</li>
+                <li><strong>Social Connections:</strong> Stay connected with friends and family.</li>
+                <li><strong>Work-Life Balance:</strong> Set boundaries between work and personal life.</li>
+                <li><strong>Self-Care:</strong> Make time for hobbies and activities you enjoy.</li>
+            </ul>
+            <div class="health-tip">
+                <strong>Tip:</strong> Practice mindfulness or meditation for 10 minutes daily.
+            </div>
+
+            <div class="related-topics">
+                <h3>Related Topics</h3>
+                <ul class="tips-list">
+                    <li><strong>Mental Health and Sleep:</strong>
+                        - Impact of sleep on mental health
+                        - Relaxation techniques for better sleep
+                        - Managing anxiety at bedtime
+                    </li>
+                    <li><strong>Mental Health and Social Wellness:</strong>
+                        - Building healthy relationships
+                        - Setting boundaries
+                        - Communication skills for mental wellbeing
+                    </li>
+                    <li><strong>Mental Health First Aid:</strong>
+                        - Recognizing mental health emergencies
+                        - Supporting someone in crisis
+                        - Resources for mental health support
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="common-ailments" class="section-card">
+            <h2>Common Ailments</h2>
+            <img src="/api/placeholder/800/400" alt="Common ailments illustration">
+            <p>Learn about prevention and management of common health issues.</p>
+            <ul class="tips-list">
+                <li><strong>Cold & Flu:</strong> Practice good hygiene and boost immunity.</li>
+                <li><strong>Headaches:</strong> Identify triggers and maintain good posture.</li>
+                <li><strong>Digestive Issues:</strong> Eat fiber-rich foods and stay hydrated.</li>
+                <li><strong>Back Pain:</strong> Practice proper lifting techniques.</li>
+                <li><strong>Allergies:</strong> Know your triggers and take preventive measures.</li>
+            </ul>
+            <div class="health-tip">
+                <strong>Tip:</strong> Regular hand washing prevents many common illnesses.
+            </div>
+
+            <div class="related-topics">
+                <h3>Related Topics</h3>
+                <ul class="tips-list">
+                    <li><strong>Preventive Care:</strong>
+                        - Regular health screenings
+                        - Vaccination schedules
+                        - Health risk assessments
+                    </li>
+                    <li><strong>Chronic Condition Management:</strong>
+                        - Lifestyle modifications
+                        - Monitoring symptoms
+                        - When to consult healthcare providers
+                    </li>
+                    <li><strong>Natural Remedies:</strong>
+                        - Herbal supplements and their uses
+                        - Home remedies for common symptoms
+                        - Alternative therapy options
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="first-aid" class="section-card">
+            <h2>First Aid</h2>
+            <img src="/api/placeholder/800/400" alt="First aid illustration">
+            <p>Essential first aid knowledge for common emergencies.</p>
+            <ul class="tips-list">
+                <li><strong>Basic Kit:</strong> Maintain a well-stocked first aid kit.</li>
+                <li><strong>Minor Cuts:</strong> Clean wounds and apply antibiotic ointment.</li>
+                <li><strong>Burns:</strong> Cool under running water, cover with sterile gauze.</li>
+                <li><strong>Sprains:</strong> Remember RICE - Rest, Ice, Compression, Elevation.</li>
+                <li><strong>Emergency Numbers:</strong> Keep important contacts readily available.</li>
+            </ul>
+            <div class="health-tip">
+                <strong>Tip:</strong> Check and update first aid supplies every six months.
+            </div>
+
+            <div class="related-topics">
+                <h3>Related Topics</h3>
+                <ul class="tips-list">
+                    <li><strong>Emergency Preparedness:</strong>
+                        - Creating emergency action plans
+                        - Disaster preparedness kits
+                        - Family emergency contacts
+                    </li>
+                    <li><strong>Advanced First Aid Skills:</strong>
+                        - CPR and AED training
+                        - Choking response
+                        - Wound care and bandaging
+                    </li>
+                    <li><strong>Special Situations:</strong>
+                        - First aid for children
+                        - Sports injuries
+                        - Environmental emergencies
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="section-card">
+            <h2>Contact Us</h2>
+            <p>Have questions or suggestions? We'd love to hear from you!</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Health & Wellness Tips. All rights reserved.</p>
+    </footer>
+</body>
+</html>
